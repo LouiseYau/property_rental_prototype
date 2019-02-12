@@ -20,14 +20,15 @@ h1 {
 .my-nav{
     width:relative;
     margin: 0% 20% 20% 20%;
-    background-color: #008001;
-    border-radius: 5%;
+    /*background-color: #008001;*/
+    /*border-radius: 5%;*/
 }
 .right-my-nav{
     width:relative;
-    margin: 0% 20% 20% 40%;
-    background-color: #008001;
-    border-radius: 5%;
+    float: right;
+    /*margin: 0% 10% 20% 40%;*/
+    /*background-color: #008001;*/
+    /*border-radius: 5%;*/
 }
 .invite{
 justify-self: last baseline;

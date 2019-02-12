@@ -76,7 +76,7 @@ class LandlordCreationForm(forms.Form):
     mobile_phone = forms.CharField(
         max_length=20
     )
-    photo = forms.ImageField()
+    # photo = forms.ImageField()
 
 
 class PropertyManagerCreationForm(ContactCreationForm):
@@ -118,7 +118,8 @@ class TenantCreationForm(ContactCreationForm):
                           name=data['name'],
                           email=data['email'],
                           address_line1=data['address_line1'],
-                          address_line2=data['address_line2'],
+
+                        address_line2=data['address_line2'],
                           address_line3=data['address_line3'],
                           home_phone=data['home_phone'],
                           work_phone=data['work_phone'],

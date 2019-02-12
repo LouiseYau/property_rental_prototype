@@ -10,8 +10,8 @@
 
 {% block main_body %}
 <div class="rentalBlock">
-        <h1>Good Choice!</h1>
-        <h4>You are applying to be considered for the following property: (id: {{ listing.id }})</h4>
+        <h1 class="mt-4 mb-2 pt-1 pb-2">Good Choice!</h1>
+        <h4>You are applying to be considered for the following property:</h4>
         <div class="rentalBlock--img">
             
             {% if listing.property.property_picture %}<img src="{{ listing.property.property_picture.url }}" alt="{{ listing.description }}"/> {%endif%} {# DOESN"T WORK #}

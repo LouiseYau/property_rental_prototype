@@ -26,11 +26,15 @@
     
     <div class="applicationStatus100Block">
         <ProgressBar percent="100"/>
-        <h1 class = "PageMainHeading">Your're all done!</h1>
-       
+        <h1 class = "PageMainHeading mt-4 mb-2 pt-1 pb-2">You're all done!</h1>
+        <div style="text-align: center">
+        <p>Thanks so much for submitting your application with us.</p>
+        <p>Your information has been shared with the property owner, who will notify you shortly of the next steps.</p>
+        </div>
+
         <div class="applicationStatus100Block--controlButtons">
           <div class="left">
-            <a class="my-nav btn btn-primary" href="{% url 'confirmation' listing.id %}" role="button">My Dashboard</a>
+            <a class="my-nav btn btn-primary" href="{% url 'home' %}" role="button">Home</a>
 
            
           </div>
@@ -39,7 +43,7 @@
               <ControlButton name="My Dashboard"/>
             </Link>
             <div class="left">
-           <a class="my-nav btn btn-primary" href="{% url 'conditions' listing.id %}" role="button">New Application</a>
+           <a class="my-nav btn btn-primary" href="{% url 'search_listings' %}" role="button">Search Listings</a>
           </div>
           </div>
         </div>
