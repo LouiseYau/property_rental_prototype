@@ -13,7 +13,7 @@
 .propertyConditions h1 {
     margin: 1em auto;
     color: #47525E;
-    font-family: Lato;
+    /* font-family: Lato; */
     font-size: 40px;
     font-weight: 700;
     line-height: 50px;

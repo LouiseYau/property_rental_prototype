@@ -36,8 +36,8 @@
 
             <div class="confirmationBlock--propertyDetails__detail___img">
 {#              <img src="{% static 'house1.png'%}" alt="nothing here"/>#}
-                 {% if listing.property.property_picture %}<img src="{{ listing.property.property_picture.url }}" alt="{{ listing.description }}"/> {%endif%} {# DOESN"T WORK #}
-            </div>
+            {% if listing.property.property_picture %}<img src="{{ listing.property.property_picture.url }}" alt="{{ listing.description }}"/> {#{%endif%}  DOESN"T WORK #}
+            {% else %}<img src="{% static 'house1.png' %}" alt="can't load"/>{% endif %}             </div>
           </div>
           <div class="confirmationBlock--propertyDetails__adultsInvited">
 
